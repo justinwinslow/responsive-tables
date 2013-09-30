@@ -6,6 +6,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $('.responsive').responsiveTable();
+        $('.responsiveNoHover').responsiveTable({hover: false});
       });
     </script>
     <style type="text/css">
@@ -14,7 +15,12 @@
       }
       th, td {
         white-space: nowrap;
+      }
+      tr {
         background: #fff;
+      }
+      tr.hover {
+        background: #eee;
       }
     </style>
   </head>
@@ -49,7 +55,7 @@
     </div>
 
     <div style="max-width: 500px">
-      <table class="responsive">
+      <table class="responsiveNoHover">
         <thead>
           <tr>
             <th>Label</th>
