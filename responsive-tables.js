@@ -12,7 +12,7 @@
 
       // Cache the el as a jquery object
       var $el = $(el),
-        // Wrap the el in a div and return the parent
+        // Wrap the el in a div and return the the new wrapper element
         $wrapper = $el.wrap('<div class="responsiveTableContainer" />').parent(),
         // Cache a copy of the el to make the fixed column
         $copy = $el.clone();
