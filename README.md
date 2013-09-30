@@ -5,7 +5,7 @@ Ugh, tables... am I right? There are other responsive table frameworks out there
 
 ## What It Does
 
-When whatever the parent of your table is smaller than the table itself, the first column of the table becomes fixed and subsequent columns are allowed to scroll horizontally underneath. This means no dropping columns or any other tomfoolery like that, and the table fluidly resizes to any width.
+When the containing element of your table is smaller than the table itself, the first column of the table becomes fixed and subsequent columns are allowed to scroll horizontally underneath. This means no dropping columns or any other tomfoolery like that, and the table fluidly resizes to any width.
 
 ## Usage
 
