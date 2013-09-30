@@ -10,11 +10,23 @@
       });
     </script>
     <style type="text/css">
+      body {
+        font-family: 'Helvetica', sans-serif;
+      }
       table {
         border-collapse: collapse;
+        border: 1px solid #ccc;
+      }
+      table.fixedColumn {
+        border-right: none;
+      }
+      th {
+        background: #ccc;
       }
       th, td {
+        text-align: left;
         white-space: nowrap;
+        padding: 3px 6px;
       }
       tr {
         background: #fff;
@@ -26,12 +38,15 @@
   </head>
   <body>
     <div>
+      <h2>100% Width Parent</h2>
       <table class="responsive">
         <thead>
           <tr>
             <th>Label</th>
             <th>Description</th>
             <th>Some Value</th>
+            <th>A Checkbox</th>
+            <th>A Button</th>
           </tr>
         </thead>
         <tbody>
@@ -39,27 +54,36 @@
             <td>Item #1</td>
             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
             <td>5000</td>
+            <td><input type="checkbox"></td>
+            <td><button>Button</button></td>
           </tr>
           <tr>
             <td>Item #2</td>
             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
             <td>25000</td>
+            <td><input type="checkbox"></td>
+            <td><button>Button</button></td>
           </tr>
           <tr>
             <td>Item #3</td>
             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
             <td>7000</td>
+            <td><input type="checkbox"></td>
+            <td><button>Button</button></td>
           </tr>
         </tbody>
       </table>
     </div>
     <div style="max-width: 500px">
+      <h2>Fixed Max-Width (500px) Parent</h2>
       <table class="responsiveNoHover">
         <thead>
           <tr>
             <th>Label</th>
             <th>Description</th>
             <th>Some Value</th>
+            <th>A Checkbox</th>
+            <th>A Button</th>
           </tr>
         </thead>
         <tbody>
@@ -67,16 +91,22 @@
             <td>Item #1</td>
             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
             <td>5000</td>
+            <td><input type="checkbox"></td>
+            <td><button>Button</button></td>
           </tr>
           <tr>
             <td>Item #2</td>
             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
             <td>25000</td>
+            <td><input type="checkbox"></td>
+            <td><button>Button</button></td>
           </tr>
           <tr>
             <td>Item #3</td>
             <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
             <td>7000</td>
+            <td><input type="checkbox"></td>
+            <td><button>Button</button></td>
           </tr>
         </tbody>
       </table>

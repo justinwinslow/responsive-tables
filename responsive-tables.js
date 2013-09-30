@@ -31,11 +31,15 @@
         'display': 'none'
       });
 
-      // Add position styling to copied table
+      // Add position styling to copied table and add class for styling
       $copy.css({
         position: 'absolute',
         top: 0,
         left: 0
+      }).addClass('fixedColumn');
+
+      $.each($el.find('tr'), function(index, el){
+        $copy.find('tr:eq(' + index + ')').css({height: $(el).outerHeight()});
       });
 
       // Add copied table to the wrapper to show it
@@ -50,13 +54,13 @@
             action = (event.type === 'mouseenter') ? 'addClass' : 'removeClass';
 
           // Add hover class to both tables
-          $el.find('tbody > tr:eq(' + index + ')')[action]('hover');
-          $copy.find('tbody > tr:eq(' + index + ')')[action]('hover');
+          $el.find('tbody tr:eq(' + index + ')')[action]('hover');
+          $copy.find('tbody tr:eq(' + index + ')')[action]('hover');
         };
 
         // Listen for hover event and do hilighting
-        $el.find('tr').hover(hilight);
-        $copy.find('tr').hover(hilight);
+        $el.find('tbody tr').hover(hilight);
+        $copy.find('tbody tr').hover(hilight);
       }
     });
   };
