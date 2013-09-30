@@ -19,4 +19,6 @@ On hover a class called, appropriately, "hover" is added to rows in the table bo
 
 ### Async
 
-So, what if I need to instantiate the table before data is actually ready? Because of how this is implemented, a clone of the table is made to act as the fixed column. The easiest way I found to keep the tables sync'd up using Marionette, was just to force rendering the whole view when data returns and add the responsive tables code in the `onRender` handler. As I build this out I may add methods for updating state, or whatever, to make it more friendly to more complex situations.
+So, what if I need to instantiate the table before data is actually ready? Because of how this is implemented, a clone of the table is made to act as the fixed column. The easiest way I found to keep the tables sync'd up using Marionette, was just to force rendering the whole view when data returns and add the responsive tables code in the `onRender` handler.
+
+As I build this out I may add methods for updating state, or whatever, to make it more friendly to more complex situations.
