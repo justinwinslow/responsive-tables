@@ -38,6 +38,7 @@
         left: 0
       }).addClass('fixedColumn');
 
+      // Adjust height to account for hidden row contents
       $.each($el.find('tr'), function(index, el){
         $copy.find('tr:eq(' + index + ')').css({height: $(el).outerHeight()});
       });
