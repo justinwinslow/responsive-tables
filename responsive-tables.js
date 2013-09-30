@@ -6,6 +6,10 @@
     }, options);
 
     this.each(function(index, el){
+      if (el.tagName.toLowerCase() !== 'table') {
+        throw 'Responsive Tables: This method only works on table elements';
+      }
+
       var $el = $(el),
         $wrapper = $el.wrap('<div class="responsiveTableContainer" />').parent(),
         $copy = $el.clone();
