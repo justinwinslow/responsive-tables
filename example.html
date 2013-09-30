@@ -9,13 +9,46 @@
       });
     </script>
     <style type="text/css">
+      table {
+        border-collapse: collapse;
+      }
       th, td {
         white-space: nowrap;
+        background: #fff;
       }
     </style>
   </head>
   <body>
-    <div style="max-width: 100%">
+    <div>
+      <table class="responsive">
+        <thead>
+          <tr>
+            <th>Label</th>
+            <th>Description</th>
+            <th>Some Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item #1</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
+            <td>5000</td>
+          </tr>
+          <tr>
+            <td>Item #2</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
+            <td>25000</td>
+          </tr>
+          <tr>
+            <td>Item #3</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
+            <td>7000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="max-width: 500px">
       <table class="responsive">
         <thead>
           <tr>
