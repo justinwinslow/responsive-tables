@@ -11,11 +11,11 @@ When whatever the parent of your table is smaller than the table itself, the fir
 
 ### Instantiating
 
-`$(el).responsiveTable()`
+`$('table').responsiveTable()`
 
 ### Hover
 
-On hover a class called, appropriately, "hover" is added to rows in the table body. Style `tr.hover` to get row hilighting or other effects.
+On hover, a class called "hover" is added to rows in the table body. Style `tr.hover` to get row hilighting or other effects.
 
 ### Async
 
