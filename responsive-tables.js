@@ -41,24 +41,18 @@
       if (options.hover) {
         var hilight = function(event){
           // get index of hovered tr
-          var index = event.currentTarget.sectionRowIndex;
+          var index = event.currentTarget.sectionRowIndex,
+          // add hover class if mouse enter else, remove it
+            action = (event.type === 'mouseenter') ? 'addClass' : 'removeClass';
 
           // Add hover class to both tables
-          $el.find('tbody > tr:eq(' + index + ')').addClass('hover');
-          $copy.find('tbody > tr:eq(' + index + ')').addClass('hover');
-        },
-        unhilight = function(event){
-          // get index of hovered tr
-          var index = event.currentTarget.sectionRowIndex;
-
-          // Remove hover class
-          $el.find('tbody > tr:eq(' + index + ')').removeClass('hover');
-          $copy.find('tbody > tr:eq(' + index + ')').removeClass('hover');
+          $el.find('tbody > tr:eq(' + index + ')')[action]('hover');
+          $copy.find('tbody > tr:eq(' + index + ')')[action]('hover');
         };
 
         // Listen for hover event and do hilighting
-        $el.find('tr').hover(hilight, unhilight);
-        $copy.find('tr').hover(hilight, unhilight);
+        $el.find('tr').hover(hilight);
+        $copy.find('tr').hover(hilight);
       }
     });
   };
