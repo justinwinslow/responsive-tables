@@ -10,8 +10,11 @@
         throw 'Responsive Tables: This method only works on table elements';
       }
 
+      // Cache the el as a jquery object
       var $el = $(el),
+        // Wrap the el in a div and return the parent
         $wrapper = $el.wrap('<div class="responsiveTableContainer" />').parent(),
+        // Cache a copy of the el to make the fixed column
         $copy = $el.clone();
 
       // Set position relative so we can position the copied table
