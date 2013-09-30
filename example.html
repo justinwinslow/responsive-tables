@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <head>
+    <title>Responsive Tables Example</title>
+    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+    <script type="text/javascript" src="responsive-tables.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.responsive').responsiveTable();
+      });
+    </script>
+    <style type="text/css">
+      th, td {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 100%">
+      <table class="responsive">
+        <thead>
+          <tr>
+            <th>Label</th>
+            <th>Description</th>
+            <th>Some Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item #1</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
+            <td>5000</td>
+          </tr>
+          <tr>
+            <td>Item #2</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
+            <td>25000</td>
+          </tr>
+          <tr>
+            <td>Item #3</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque enim metus.</td>
+            <td>7000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
