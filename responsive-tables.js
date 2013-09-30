@@ -27,8 +27,7 @@
       $copy.css({
         position: 'absolute',
         top: 0,
-        left: 0,
-        background: '#f00'
+        left: 0
       });
 
       // Add copied table to the wrapper to show it
