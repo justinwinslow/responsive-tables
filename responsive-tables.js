@@ -13,7 +13,7 @@
 
       // Make the original table scroll
       $el.css({
-        display: 'block',
+        display: 'inline-block',
         'max-width': '100%',
         'overflow-x': 'auto'
       });
