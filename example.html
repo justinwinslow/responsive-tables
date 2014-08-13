@@ -1,7 +1,10 @@
 <!DOCTYPE html>
   <head>
     <title>Responsive Tables Example</title>
-    <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
     <script type="text/javascript" src="responsive-tables.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -10,6 +13,9 @@
       });
     </script>
     <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
       body {
         font-family: 'Helvetica', sans-serif;
       }

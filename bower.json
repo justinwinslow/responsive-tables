@@ -2,6 +2,7 @@
   "name": "responsive-tables",
   "version": "0.0.1",
   "dependencies": {
-    "jquery": "latest"
+    "jquery": "latest",
+    "normalize-css": "latest"
   }
 }
